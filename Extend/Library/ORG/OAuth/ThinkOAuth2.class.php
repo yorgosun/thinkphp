@@ -34,7 +34,7 @@ class ThinkOAuth2 extends OAuth2 {
     /**
      * 析构
      */
-    function __destruct() {
+    public function __destruct() {
         $this->db = NULL; // Release db connection
     }
 
