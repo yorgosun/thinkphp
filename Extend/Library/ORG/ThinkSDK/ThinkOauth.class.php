@@ -160,6 +160,7 @@ abstract class ThinkOauth
                 throw new Exception('AUTHORIZE配置不正确！');
             }
         }
+        file_put_contents('/tmp/test.log', var_export($params, 1), FILE_APPEND);
         return $this->GetRequestCodeURL . '?' . http_build_query($params);
     }
 
