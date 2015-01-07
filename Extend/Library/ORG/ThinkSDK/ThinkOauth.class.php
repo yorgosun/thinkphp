@@ -147,7 +147,7 @@ abstract class ThinkOauth
         //Oauth 标准参数
         $params = array(
             'client_id' => $this->AppKey,
-            'redirect_uri' => $this->Callback,
+            'redirect_uri' => urlencode($this->Callback),
             'response_type' => $this->ResponseType,
         );
 
